@@ -36,7 +36,7 @@ PARA USAR EM OUTRO COMPUTADOR:
 git clone https://github.com/luisribeiro1/frontend.git
 git pull origin main
 Seguir os passos descritos em Atualizações.
-
+ 
 
 ctrl J ativa e desaticva o terminal
 
