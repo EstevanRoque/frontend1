@@ -77,7 +77,7 @@ H2 {
 
 
 .grid-home {
-    
+
     display: flex;
     /*FLEXBOX */
     flex-wrap: wrap;
@@ -92,10 +92,11 @@ H2 {
         /* vai permitir aumentar o tamanho*/
         flex-shrink: 1;
         /* vai permitir reduzir o tamanho*/
-        
+
 
     }
-    a{
+
+    a {
         text-decoration: none;
         color: #000000;
     }
@@ -103,7 +104,7 @@ H2 {
 }
 
 .card {
-    
+
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     /*sombra descolacamento horizontal, vertical, desfoque e a cor da sombra*/
     border-radius: 10px;
@@ -122,14 +123,14 @@ H2 {
     H3 {
         color: #6a3bc8;
         margin: 15px 0 8px 0;
-        
+
     }
 
     p {
-        
+
         font-size: 0.95rem;
         padding: 0px 10px;
-        
+
     }
 
 

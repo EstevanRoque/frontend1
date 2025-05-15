@@ -40,3 +40,4 @@ Seguir os passos descritos em Atualizações.
 
 ctrl J ativa e desaticva o terminal
 
+shift alt f contatena
