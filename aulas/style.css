@@ -33,6 +33,17 @@ footer {
 
 }
 
+a {
+    text-decoration: none;
+    color: #492291;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* volta o sublinha */
+}
+
+
 main {
 
     width: 1200px;
@@ -98,7 +109,7 @@ H2 {
 
     a {
         text-decoration: none;
-        color: #000000;
+        color: #492291;
     }
 
 }
@@ -182,4 +193,20 @@ H2 {
         transform: translateY(-2px);
     }
 
+
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+
+    a {
+        padding: 10px 15px;
+        border-radius: 8px;
+        background-color: grey;
+        color: #FFF;
+
+    }
 }

@@ -33,11 +33,13 @@ git push
 
 PARA USAR EM OUTRO COMPUTADOR:
 
-git clone https://github.com/luisribeiro1/frontend.git
+git clone https://github.com/EstevanRoque/frontend1.git
 git pull origin main
 Seguir os passos descritos em Atualizações.
  
 
-ctrl J ativa e desaticva o terminal
+ctrl J ativa e desativa o terminal
 
 shift alt f contatena
+
+https://www.origamid.com/projetos/flexbox-guia-completo/
