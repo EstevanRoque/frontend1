@@ -210,3 +210,35 @@ H2 {
 
     }
 }
+
+.grid-clinica {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+
+    div {
+        
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 300px;
+     
+
+        
+    }
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    h2{
+        text-align: start;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    p{
+        line-height: 150%;
+        margin-bottom: 15px;
+
+    }
+}
