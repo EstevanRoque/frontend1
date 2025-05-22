@@ -262,6 +262,7 @@ H2 {
     justify-content: space-between;
     gap: 1.5rem;
     align-items: flex-start;
+
     * {
         flex-basis: 300px;
         /* tamanho inicial para o elemento filho*/
@@ -273,4 +274,27 @@ H2 {
 
     }
 
+}
+
+
+
+
+@media (max-width:728px) {
+    .video-sobre {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 */
+          padding-top: 25px;
+          height: 0;
+                 
+          
+      }
+
+    .video-sobre iframe {
+          Position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        
+     }
 }
