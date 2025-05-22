@@ -43,3 +43,5 @@ ctrl J ativa e desativa o terminal
 shift alt f contatena
 
 https://www.origamid.com/projetos/flexbox-guia-completo/
+
+https://www.w3schools.com/

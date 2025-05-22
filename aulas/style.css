@@ -219,26 +219,58 @@ H2 {
     align-items: flex-start;
 
     div {
-        
+
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 300px;
-     
 
-        
+
+
     }
-    img{
+
+    img {
         width: 100%;
         border-radius: 20px;
     }
-    h2{
+
+    h2 {
         text-align: start;
         margin-bottom: 15px;
         margin-top: 0;
     }
-    p{
+
+    p {
         line-height: 150%;
         margin-bottom: 15px;
 
     }
+
+    ul,
+    ol {
+        padding-left: 20px;
+        list-style: square;
+
+        li {
+            line-height: 150%;
+        }
+    }
+}
+
+.grid-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+    * {
+        flex-basis: 300px;
+        /* tamanho inicial para o elemento filho*/
+        flex-grow: 1;
+        /* vai permitir aumentar o tamanho*/
+        flex-shrink: 1;
+        /* vai permitir reduzir o tamanho*/
+
+
+    }
+
 }
