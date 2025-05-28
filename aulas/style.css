@@ -298,3 +298,99 @@ H2 {
         
      }
 }
+/* Formatação das tabelas */
+
+table{
+    width: 100%;
+    border-collapse: collapse;      /* Junta as bordas em uma só */
+}
+th{
+    text-align: start;      /* alinhamento a esquerda */
+}
+
+
+.tabela1 th{
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 8px;
+}
+.tabela1 td{
+    border: 2px solid #ccc;
+    padding: 8px;
+}
+.tabela1 th:nth-child(3),
+.tabela1 td:nth-child(3){    /* pseudo seletor */
+    text-align: end;
+    font-weight: 500;
+}
+.tabela1 th:nth-child(4),
+.tabela1 td:nth-child(4){    /* pseudo seletor */
+    text-align: center;
+}
+.tabela1 tr:nth-child(even){        /* even = par, odd = ímpar */
+    color: green;
+}
+
+
+
+/* tabela 2 */
+
+.tabela2 th {
+    border-bottom: 3px solid #aaa;
+}
+
+.tabela2 td {
+    border-bottom: 1px solid #ccc;
+}
+
+.tabela2 th:nth-child(2n+3),
+.tabela2 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela2 th:nth-child(2n+4),
+.tabela2 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+/* Formatação da terceira coluna */
+td:nth-child(3),
+th:nth-child(3) {
+    /* background-color: lightblue; */
+}
+/* tabela 3 */
+
+.tabela3 tr:nth-child(odd)
+
+/* even = par / odd = ímpar */
+    {
+    background-color: #ccc;
+}
+
+.tabela3 th:nth-child(2n+3),
+.tabela3 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela3 th:nth-child(2n+4),
+.tabela3 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+.galeria-destaque{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 30px 0px 10px 0px;
+    img{
+        width: 60%;
+    }
+}
+.galeria-miniaturas{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 110px;
+
+    }
+}
