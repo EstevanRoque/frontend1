@@ -380,4 +380,62 @@ th:nth-child(3) {
    text-align: center;
     video{ width: 70%;
     }
+    iframe{
+        width: 70%;
+        height: 45vh;
+        
+
+    }
+}
+
+.grid-convenio{
+    display: flex;
+    /*FLEXBOX */
+    flex-wrap: wrap;
+    /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
+    gap: 25px;
+
+    /*espacamento entre os cards*/
+    * {
+        flex-basis: 200px;
+        /* tamanho inicial para o elemento filho*/
+        flex-grow: 1;
+        /* vai permitir aumentar o tamanho*/
+        flex-shrink: 1;
+        /* vai permitir reduzir o tamanho*/
+
+
+    }
+    i{
+        font-size: 400%;
+        margin-top: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #492291;
+    }
+
+}
+.card-convenio{
+
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    /*sombra descolacamento horizontal, vertical, desfoque e a cor da sombra*/
+    border-radius: 10px;
+    /* cantos arredodados */
+    
+    text-align: center;
+
+   
+
+    H3 {
+        color: #6a3bc8;
+       
+
+    }
+
+  
+
+}
+
 }
