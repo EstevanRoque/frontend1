@@ -33,7 +33,7 @@ git push
 
 PARA USAR EM OUTRO COMPUTADOR:
 
-git clone https://github.com/EstevanRoque/frontend1.git
+git clone https://github.com/EstevanRoque/cd.git
 git pull origin main
 Seguir os passos descritos em Atualizações.
  

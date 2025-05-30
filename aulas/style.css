@@ -419,9 +419,7 @@ th:nth-child(3) {
 }
 .card-convenio{
 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    /*sombra descolacamento horizontal, vertical, desfoque e a cor da sombra*/
-    border-radius: 10px;
+      border-radius: 10px;
     /* cantos arredodados */
     
     text-align: center;
