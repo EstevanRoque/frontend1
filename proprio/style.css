@@ -23,7 +23,6 @@ body {
     #12c2e9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
   main {
     width: 1200px;
     margin: 0 auto 0 auto;
@@ -122,8 +121,242 @@ header.rolagem {
   background-image: none;
 }
 .grid-home {
-padding-top: 60px;
-    display: flex;
+  padding-top: 60px;
+  display: flex;
+  /*FLEXBOX */
+  flex-wrap: wrap;
+  /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
+  gap: 25px;
+
+  /*espacamento entre os cards*/
+  * {
+    flex-basis: 250px;
+    /* tamanho inicial para o elemento filho*/
+    flex-grow: 1;
+    /* vai permitir aumentar o tamanho*/
+    flex-shrink: 1;
+    /* vai permitir reduzir o tamanho*/
+    align-items: stretch;
+  }
+
+  a {
+    text-decoration: none;
+    color: #492291;
+  }
+}
+
+.card {
+  /*sombra descolacamento horizontal, vertical, desfoque e a cor da sombra*/
+  border-radius: 10px;
+  /* cantos arredodados */
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #fff;
+  height: 400px;
+
+  img {
+    width: 60%;
+  }
+
+  H3 {
+    color: #6a3bc8;
+    margin: 15px 0 20px 0;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0px 10px;
+  }
+}
+
+/*formata o comportamento do card*/
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgb(0, 0, 0);
+  /*modifica a condicao visual do elemento */
+}
+.redes-sociais {
+  padding: 10px 0 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+
+  a {
+    padding: 10px 15px;
+    /* 10 pk de top npttpm e 15 px de cada lado*/
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    /*tira sublinhado do link*/
+  }
+
+  a:nth-child(1) {
+    background-color: #3b5998;
+  }
+
+  a:nth-child(2) {
+    background-color: #c4302b;
+  }
+
+  a:nth-child(3) {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d
+    );
+  }
+
+  a:nth-child(4) {
+    background-color: #075e54;
+  }
+
+  a:nth-child(5) {
+    background-color: #000000;
+  }
+
+  a:hover {
+    transform: translateY(-2px);
+  }
+}
+h4 {
+  font-size: 50px;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: #fff;
+}
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+.grid-segundo {
+  padding-top: 60px;
+  display: flex;
+  /*FLEXBOX */
+  flex-wrap: wrap;
+  /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
+
+  /*espacamento entre os cards*/
+  * {
+    flex-basis: 530px;
+    /* tamanho inicial para o elemento filho*/
+    flex-grow: 1;
+    /* vai permitir aumentar o tamanho*/
+    flex-shrink: 1;
+    /* vai permitir reduzir o tamanho*/
+    align-items: stretch;
+    color: #000000;
+  }
+}
+.grid-terceiro {
+  padding-top: 35px;
+  display: flex;
+  /*FLEXBOX */
+  flex-wrap: wrap;
+  /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
+  gap: 2px;
+
+  /*espacamento entre os cards*/
+  * {
+    flex-basis: 250px;
+    /* tamanho inicial para o elemento filho*/
+    flex-grow: 1;
+    /* vai permitir aumentar o tamanho*/
+    flex-shrink: 1;
+    /* vai permitir reduzir o tamanho*/
+    align-items: stretch;
+   
+  }
+}
+.cont1 {
+  height: 500px;
+  background-color: #efb6d6;
+
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px 0px 0px 15px;
+
+  h1 {
+    color: #0077b6;
+    
+    font-size: 40px;
+    padding-bottom: 50px;
+    margin: 50px 20px 0 50px;
+    
+  }
+  p {
+    margin: 10px 0px 0 50px;
+    color: #0077b6;
+    font-size: 15px;
+  }
+}
+.cont2 {
+  height: 500px;
+  background-color: #efb6d6;
+
+  padding: 0px 20px 20px 20px;
+  border-radius: 0px 15px 15px 0px;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    color: #5d0ae3;
+    padding: 0px 20px 20px 20px;
+    
+  }
+
+  i {
+    font-size: 30px;
+    text-align: center;
+    color: #5d0ae3;
+    
+  }
+}
+.box{
+  background-color:  #fff;
+  border-radius: 20px;
+  height: 200px;
+  margin: 4px 0px 4px 4px;
+  
+}
+.briefing{
+  text-align: center;
+  h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    margin-top: 100px;
+  }
+  p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+.whatsapp button{
+  width: 180px;
+  height: 40px;
+  border: 0;
+  background-color: #fff;
+  color: #0e7012;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-block: 100px;
+
+
+}
+}
+
+.processo {
+ display: flex;
     /*FLEXBOX */
     flex-wrap: wrap;
     /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
@@ -131,117 +364,44 @@ padding-top: 60px;
 
     /*espacamento entre os cards*/
     * {
-        flex-basis: 250px;
+        flex-basis: 500px;
         /* tamanho inicial para o elemento filho*/
         flex-grow: 1;
         /* vai permitir aumentar o tamanho*/
         flex-shrink: 1;
         /* vai permitir reduzir o tamanho*/
-        align-items: stretch;
-
+text-align: center;
 
     }
-
-    a {
-        text-decoration: none;
-        color: #492291;
-    }
-
-}
-
-.card {
-
    
-    /*sombra descolacamento horizontal, vertical, desfoque e a cor da sombra*/
-    border-radius: 10px;
-    /* cantos arredodados */
-    padding-bottom: 15px;
-    text-align: center;
-    background-color: #fff;
-    height: 400px;
+  }
+  
+.card2{
+    
  
-
-    img{
-      width: 60%;
-    }
-
-    H3 {
-        color: #6a3bc8;
-        margin: 15px 0 20px 0;
-
-    }
-
-    p {
-
-        font-size: 1rem;
-        padding: 0px 10px;
-
-    }
+  height: 200px;
+  margin: 4px -100px 130px 0px;
+  color: white;
+  h1{
+    margin: 10px;
+  }
 
 
 }
+.cardimg{
 
-/*formata o comportamento do card*/
-.card:hover {
-    transform: translateY(-10px);
-     box-shadow: 0 6px 10px rgb(0, 0, 0);
-    /*modifica a condicao visual do elemento */
+
+  height: 200px;
+  margin: 4px 10px 4px 20px;
+  
+  img{
+    width: 200px;
+    height: 200px;
+  
+
+  }
 }
-.redes-sociais {
-  padding: 10px 0 80px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-
-    a {
-        padding: 10px 15px;
-        /* 10 pk de top npttpm e 15 px de cada lado*/
-        border-radius: 8px;
-        color: #FFF;
-        text-decoration: none;
-        /*tira sublinhado do link*/
-
-    }
-
-    a:nth-child(1) {
-        background-color: #3b5998;
-    }
-
-    a:nth-child(2) {
-        background-color: #c4302b;
-    }
-
-    a:nth-child(3) {
-        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    }
-
-    a:nth-child(4) {
-        background-color: #075e54;
-    }
-
-    a:nth-child(5) {
-        background-color: #000000;
-    }
-
-    a:hover {
-        transform: translateY(-2px);
-    }
 
 
-}
-h4{
-  font-size: 50px;
-  text-align: center;
-  padding: 30px 0 30px 0;
-  color: #FFF;
-}
-footer {
-
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-    color: #777;
 
 
-}
