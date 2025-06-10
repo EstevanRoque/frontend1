@@ -618,7 +618,7 @@ th:nth-child(3) {
 
     .grid-clinica,
     .grid-especialidades,
-    .grid-convenio {
+    .grid-convenio, .form-group {
         flex-direction: column;
 
         align-items: center;
@@ -640,7 +640,8 @@ th:nth-child(3) {
             width: 100%;
         }
     }
+    .agendamento{
+        width: 100%;
 
-    @media screen and (max-width:600px) {}
-
-    @media screen and (max-width:400px) {}
+    }
+}
