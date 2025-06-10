@@ -155,6 +155,7 @@ H2 {
 
 .redes-sociais {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
@@ -217,6 +218,7 @@ H2 {
     justify-content: space-between;
     gap: 1.5rem;
     align-items: flex-start;
+
 
     div {
 
@@ -465,8 +467,9 @@ th:nth-child(3) {
         flex-grow: 1;
         flex-shrink: 1;
     }
-    div:last-child{
-        iframe{
+
+    div:last-child {
+        iframe {
             border-radius: 15px;
             width: 100%;
             height: 60vh;
@@ -486,7 +489,8 @@ th:nth-child(3) {
     }
 
     input[type=text],
-    input[type=email],textarea {
+    input[type=email],
+    textarea {
         padding: 10px;
         width: 90%;
         border: 1px solid #bbb;
@@ -511,7 +515,7 @@ th:nth-child(3) {
         padding: 10px 30px;
         border-radius: 5px;
         cursor: pointer;
-       
+
 
     }
 
@@ -522,5 +526,121 @@ th:nth-child(3) {
     input[type=submit]:hover {
         background-color: #000000;
     }
-    
+
 }
+
+.agendamento {
+    margin: 0px auto;
+    /* centralizar o continer */
+    width: 50%;
+    text-align: center;
+
+    /* centralizar o conteudo*/
+    label {
+        display: block;
+        /*cada label fica em cada linha*/
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .9rem;
+        color: #555;
+    }
+
+    .form-group {
+        display: flex;
+        /* lado a lado*/
+        justify-content: space-between;
+        /*distribuicao de conteudo*/
+    }
+
+    input[type=date],
+    input[type=text],
+    input[type=time],
+    select {
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+
+    }
+
+    input[type=time] {
+        padding: 7px;
+    }
+
+    input[type=text] {
+
+        width: 80%;
+
+    }
+
+
+    input[type=submit] {
+        border-style: none;
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+
+
+    }
+
+
+
+
+    input[type=submit]:hover {
+        background-color: #000000;
+    }
+
+    div {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    /*media queries*/
+    main {
+        width: 100%;
+    }
+
+    .grid-home {
+        * {
+            flex-basis: 100%;
+
+        }
+
+
+
+
+
+    }
+
+    .grid-clinica,
+    .grid-especialidades,
+    .grid-convenio {
+        flex-direction: column;
+
+        align-items: center;
+
+        div {
+            width: 80%;
+
+        }
+    }
+
+    .videos {
+
+        iframe {
+            width: 100%;
+            height: 25vh;
+        }
+
+        video {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:600px) {}
+
+    @media screen and (max-width:400px) {}
