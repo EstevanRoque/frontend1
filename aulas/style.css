@@ -5,6 +5,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /*altera a forma que o CSS contabiliza o tamanho do objeto , incluindo as bordas e margens ao tamanho do objeto*/
     /* ALINHAMENTO DA PAGINA  shift alt F alinha o codigo*/
 }
 
@@ -597,11 +599,13 @@ th:nth-child(3) {
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px){
 
     /*media queries*/
     main {
         width: 100%;
+        padding-left: 15PX;
+        padding-right: 15px;
     }
 
     .grid-home {
@@ -618,13 +622,15 @@ th:nth-child(3) {
 
     .grid-clinica,
     .grid-especialidades,
-    .grid-convenio, .form-group {
+    .grid-convenio,
+    .form-group,
+    .contato {
         flex-direction: column;
 
         align-items: center;
 
         div {
-            width: 80%;
+            width: 100%;
 
         }
     }
@@ -640,8 +646,42 @@ th:nth-child(3) {
             width: 100%;
         }
     }
-    .agendamento{
+
+    .agendamento {
         width: 100%;
 
     }
+
+
+.contato {
+    div {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.grid-clinica {
+    card {
+        width: 100%;
+
+    }
+
+    div {
+        flex-basis: 100%;
+    }
+}
+
+    .galeria-destaque {
+        img {
+            width: 100%;
+        }
+    }
+
+    .galeria-miniaturas {
+        flex-wrap: wrap;
+        Img{
+        width: 20%;
+    }
+}
 }
