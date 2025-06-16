@@ -92,7 +92,7 @@ header.rolagem {
 .banner {
   padding-top: 250px;
   margin-bottom: 130px;
-  height: 50vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,6 +102,10 @@ header.rolagem {
     font-size: 2em;
     text-align: start;
     color: #fff;
+    span{
+      color: #2b12e9;
+      font-size: 1.3em;
+    }
   }
   p {
     padding-top: 20px;
@@ -121,7 +125,12 @@ header.rolagem {
   background-image: none;
 }
 .grid-home {
-  padding-top: 60px;
+      padding-top: 250px;
+  margin-bottom: 130px;
+ 
+  width: 1200px;
+
+
   display: flex;
   /*FLEXBOX */
   flex-wrap: wrap;
@@ -136,7 +145,7 @@ header.rolagem {
     /* vai permitir aumentar o tamanho*/
     flex-shrink: 1;
     /* vai permitir reduzir o tamanho*/
-    align-items: stretch;
+    
   }
 
   a {
@@ -236,7 +245,8 @@ footer {
   color: #777;
 }
 .grid-segundo {
-  padding-top: 60px;
+        padding-top: 250px;
+  margin-bottom: 130px;
   display: flex;
   /*FLEXBOX */
   flex-wrap: wrap;
@@ -255,7 +265,9 @@ footer {
   }
 }
 .grid-terceiro {
-  padding-top: 35px;
+        padding-top: 50px;
+  margin-bottom: 130px;
+  
   display: flex;
   /*FLEXBOX */
   flex-wrap: wrap;
@@ -271,7 +283,6 @@ footer {
     flex-shrink: 1;
     /* vai permitir reduzir o tamanho*/
     align-items: stretch;
-   
   }
 }
 .cont1 {
@@ -283,11 +294,10 @@ footer {
 
   h1 {
     color: #0077b6;
-    
+
     font-size: 40px;
     padding-bottom: 50px;
     margin: 50px 20px 0 50px;
-    
   }
   p {
     margin: 10px 0px 0 50px;
@@ -307,101 +317,193 @@ footer {
     text-align: center;
     color: #5d0ae3;
     padding: 0px 20px 20px 20px;
-    
   }
 
   i {
     font-size: 30px;
     text-align: center;
     color: #5d0ae3;
-    
   }
 }
-.box{
-  background-color:  #fff;
+.box {
+  background-color: #fff;
   border-radius: 20px;
   height: 200px;
   margin: 4px 0px 4px 4px;
-  
 }
-.briefing{
+.briefing {
   text-align: center;
-  h1{
+  h1 {
     text-align: center;
     font-size: 30px;
     color: white;
     margin: 30px;
     margin-top: 100px;
   }
-  p{
+  p {
     text-align: center;
     color: white;
     font-size: 20px;
   }
-.whatsapp button{
-  width: 180px;
-  height: 40px;
-  border: 0;
-  background-color: #fff;
-  color: #0e7012;
-  cursor: pointer;
-  transition: 0.2s;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-block: 100px;
-
-
-}
+  .whatsapp button {
+    width: 180px;
+    height: 40px;
+    border: 0;
+    background-color: #fff;
+    color: #0e7012;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-block: 100px;
+  }
 }
 
 .processo {
- display: flex;
-    /*FLEXBOX */
-    flex-wrap: wrap;
-    /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
-    gap: 25px;
-
-    /*espacamento entre os cards*/
-    * {
-        flex-basis: 500px;
-        /* tamanho inicial para o elemento filho*/
-        flex-grow: 1;
-        /* vai permitir aumentar o tamanho*/
-        flex-shrink: 1;
-        /* vai permitir reduzir o tamanho*/
-text-align: center;
-
-    }
    
-  }
-  
-.card2{
-    
+
  
-  height: 200px;
-  margin: 4px -100px 130px 0px;
+  width: 1200px;
+
+  display: flex;
+  /*FLEXBOX */
+  flex-wrap: wrap;
+  /* PERMITE A QUEBRA DE LINHO CONFORME TAMANHO ESTABELECIDO*/
+  gap: 25px;
+
+  /*espacamento entre os cards*/
+  * {
+    flex-basis: 450px;
+
+    /* tamanho inicial para o elemento filho*/
+    flex-grow: 1;
+    /* vai permitir aumentar o tamanho*/
+    flex-shrink: 1;
+    /* vai permitir reduzir o tamanho*/
+    text-align: center;
+  }
+}
+
+.card2 {
+  height: 150px;
+  margin-top: 10px;
+  
   color: white;
-  h1{
+  h1 {
     margin: 10px;
   }
-
-
 }
-.cardimg{
+.cardimg {
+  height: 160px;
+  margin-top: 20px;
 
+  img {
+    width: 25vh;
+    height: 25vh;
+  }
+}
 
-  height: 200px;
-  margin: 4px 10px 4px 20px;
-  
+.planosletre{
+      padding-top: 250px;
+
+ 
+}
+.containera {
+  width: 100%;
+  overflow: hidden; /* Esconde o texto que ultrapassa a largura */
+}
+
+.marquee {
+  color: white;
+  font-size: 3em;
+  white-space: nowrap; /* Impede quebra de linha */
+  display: inline-block; /* Permite animação horizontal */
+  animation: marquee 15s linear infinite; /* Aplica a animação */
   img{
-    width: 200px;
-    height: 200px;
-  
-
+    width: 5rem;
+  }
+  span{
+    color: #5d0ae3;
+    font-weight: 800;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+  }
+  100% {
+    transform: translateX(-100%); /* Termina fora da tela à esquerda */
   }
 }
 
 
 
 
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+
+     width: 90%;
+    }
+  }
+  .banner{
+
+padding-bottom: 350px;
+
+    display: block;
+    p{
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .flex {
+    align-items: center;
+    .div {
+      display: block;
+    }
+  }
+  .btn-contato {
+    display: none;
+  }
+
+  .foco {
+    display: none;
+  }
+  .grid-home {
+ 
+    width: 100%;
+    align-items: center;
+    
+
+    
+   
+  }
+  .card {
+    height: 46vh;
+   
+    img {
+      width: 20%;
+    }
+  }
+  
+  .redes-sociais {
+   flex-direction: column;
+    justify-content: center;
+    *{
+      flex-basis: 900%;
+      flex-grow: 1;
+        /* vai permitir aumentar o tamanho*/
+        flex-shrink: 1;
+    }
+
+  }
+}
+h4{
+  font-size: 2em;
+}
+hr{
+  display: none;
+}
